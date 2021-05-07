@@ -23,4 +23,4 @@ app.get('/', async (req, res) => {
     })
 })
 
-app.listen(5000, () => console.log("Server is up and running....."));
+app.listen(process.env.PORT || 3000, () => console.log("Server is up and running....."));
