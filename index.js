@@ -18,7 +18,6 @@ const FetchJobs = async () => {
 
 app.get('/', async (req, res) => {
     FetchJobs().then(stuff => {
-        console.log(stuff);
         res.json(stuff);
     })
 })
