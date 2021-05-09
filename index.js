@@ -19,6 +19,7 @@ const FetchJobs = async () => {
 app.get('/', async (req, res) => {
     FetchJobs().then(stuff => {
         res.json(stuff);
+        console.log("this route works");
     })
 })
 
